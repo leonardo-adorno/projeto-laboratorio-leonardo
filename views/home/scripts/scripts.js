@@ -1,0 +1,1 @@
+// Scripts JavaScript específicos para a página inicial (JS)

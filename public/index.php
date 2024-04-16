@@ -1,0 +1,1 @@
+<!-- Arquivo de entrada da aplicação (PHP) -->

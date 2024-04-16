@@ -1,0 +1,1 @@
+<!-- Controlador para a página inicial (PHP) -->
