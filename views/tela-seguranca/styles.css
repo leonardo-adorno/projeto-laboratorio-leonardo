@@ -1,0 +1,129 @@
+body {
+  background-color: lightblue;
+}
+
+.modal-content {
+  background-color: lightgrey;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.student-info {
+  background-color: #B0C4DE;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 2px solid;
+  text-align: center;
+}
+
+.btn-container {
+  text-align: center; /* Centralizar botões */
+}
+
+.btn-approve,
+.btn-deny {
+  padding: 15px 30px; /* Aumentar tamanho dos botões */
+  width: 45%; /* Definir largura para 45% */
+  margin: 10px 0; /* Adicionar margem entre os botões */
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block; /* Exibir os botões em linha */
+}
+
+.btn-approve {
+  background-color: #2ecc71; /* Cor verde para aprovar */
+  color: white;
+}
+
+.btn-deny {
+  background-color: #e74c3c; /* Cor vermelha para negar */
+  color: white;
+}
+
+.btn-approve:hover{
+  background-color: #25a65f;
+}
+.btn-deny:hover {
+  background-color: #a62525; /* Tom mais escuro ao passar o mouse */
+}
+
+#modalApproval .modal-content {
+  background-color: #2ecc71;
+}
+
+#modalApproval .modal-title {
+  text-align: center;
+  color: white;
+}
+
+#modalApproval p {
+  text-align: center;
+  color: white;
+}
+
+/* Estilos para a modal de entrada/saída negada */
+#modalDenial .modal-content {
+  background-color: #e74c3c;
+}
+
+#modalDenial .modal-title {
+  text-align: center;
+  color: white;
+}
+
+#modalDenial p {
+  text-align: center;
+  color: white;
+}
+
+
+
+.login-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.security-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  cursor: pointer;
+  background-color: white;
+}
+
+.login-options {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  z-index: 1000;
+  text-align: right;
+}
+
+.login-options p {
+  margin: 5px 0;
+}
+
+.login-options a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}

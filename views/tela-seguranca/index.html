@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modal de Aprovação</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+  <img src="../../public/assets/perfilSeguranca.png" class="security-img" onclick="showLoginOptions()">
+  <div class="login-options" id="loginOptions">
+    <p>Segurança João</p>
+    <p><a href="#" onclick="logout()">Deslogar</a></p>
+  </div>
+</div>
+<div class="modal-container" id="modalContainer">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+      <h2 class="modal-title">Confirmar Aprovação</h2>
+    <div class="student-info">
+      <p>Nome do Aluno: Leonardo Feijó Adorno</p>
+      <p>Matrícula: 123456789</p>
+      <p>Curso: Engenharia de Software</p>
+    </div>
+    <div class="btn-container">
+      <button onclick="showApprovalModal()" class="btn-approve">Aprovar</button>
+      <button onclick="showDenialModal()" class="btn-deny">Negar</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-container" id="modalApproval" style="display:none">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalApproval()">&times;</span>
+    <h2 class="modal-title">Entrada/Saída Aprovada</h2>
+    <p>A entrada/saída do aluno foi aprovada com sucesso!</p>
+  </div>
+</div>
+
+<div class="modal-container" id="modalDenial" style="display:none">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalDenial()">&times;</span>
+    <h2 class="modal-title">Entrada/Saída Negada</h2>
+    <p>A entrada/saída do aluno foi negada.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

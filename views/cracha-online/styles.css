@@ -23,7 +23,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 80%;
+    height: 90%;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 20px;
@@ -41,16 +41,65 @@ body {
     border-radius: 50%;
     margin-bottom: 10px;
     border: 4px solid #bdc3c7;
+    background-color: white;
   }
   
   .info p {
     margin-bottom: 10px;
   }
   
+  .barcode-img {
+    width: 100%;
+    max-width: 300px;
+    height: 70px;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   h1 {
     font-size: 30px;
     margin: 10px 0;
     color: #2ecc71;
+  }
+
+  .login-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+  .student-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .login-options {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    z-index: 1000;
+    text-align: right;
+  }
+  
+  .login-options p {
+    margin: 5px 0;
+  }
+  
+  .login-options a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
   }
   

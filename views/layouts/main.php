@@ -1,1 +1,0 @@
-<!-- Layout principal da aplicação (PHP) -->

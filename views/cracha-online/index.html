@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crachá Online</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="cracha-container">
-  <div class="container-white">
-    <div class="header">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8yMaPYaQcoNUQC0qS9IiTfk72wTDR1lYSv6M2DxiOpw&s" alt="Foto do Aluno">
-      <h1>Leonardo Feijó Adorno</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crachá Online</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <img
+      src="../../public/assets/perfilAluno.png"
+      class="student-img" onclick="showLoginOptions()">
+      <div class="login-options" id="loginOptions">
+        <p>Leonardo F. Adorno</p>
+        <p><a href="#" onclick="logout()">Deslogar</a></p>
+      </div>
     </div>
-    <div class="info">
-      <p><strong>Instituto:</strong> Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul</p>
-      <p><strong>Campus:</strong>  Campus Canoas</p>
-      <p><strong>Matrícula:</strong> 123456789</p>
-      <p><strong>Curso:</strong> Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+    <div class="cracha-container">
+      <div class="container-white">
+        <div class="header">
+          <img
+            src="../../public/assets/perfilAluno.png"
+            alt="Foto do Aluno"
+          />
+          <h1>Leonardo Feijó Adorno</h1>
+        </div>
+        <div class="info">
+          <p>
+            <strong>Instituto:</strong> Instituto Federal de Educação, Ciência e
+            Tecnologia do Rio Grande do Sul
+          </p>
+          <p><strong>Campus:</strong> Campus Canoas</p>
+          <p><strong>Matrícula:</strong> 123456789</p>
+          <p>
+            <strong>Curso:</strong> Tecnologia em Análise e Desenvolvimento de
+            Sistemas
+          </p>
+          <img src="../../public/assets/codigoBarras.png" alt="Código de Barras" class="barcode-img" />
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
